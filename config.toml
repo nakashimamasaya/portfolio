@@ -1,0 +1,46 @@
+## Basic Configuration
+
+baseURL = 'http:///'
+languageCode = 'ja'
+title = 'かものサイト'
+theme = 'hugo-goa'
+author = 'Masaya Nakashima'
+publishdir = 'public'
+contentdir = 'content'
+
+## Site Settings
+[params]
+author = "かも"
+intro = ""
+description = "高専卒の19卒エンジニア　気ままにしてます"
+authorimage = "kamo.png"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "高専卒のエンジニアがたまに書いているブログです"
+keyword = "kamo,blog,かも,ブログ"
+
+## Social Accounts
+[params.social]
+github = "nakashimamasaya"
+twitter = "kamo22sima"
+facebook = "kawa18sima"
+
+## Extras
+[params.extra]
+copyright = "© 2021. Masaya Nakashima." 
+poweredby = true
+hightlightjs = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"

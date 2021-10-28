@@ -1,6 +1,6 @@
 ## Basic Configuration
 
-baseURL = 'http:///'
+baseURL = 'https://nakashimamasaya.github.io/portfolio/'
 languageCode = 'ja'
 title = 'かものサイト'
 theme = 'hugo-goa'

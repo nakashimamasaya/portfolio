@@ -5,7 +5,7 @@ languageCode = 'ja'
 title = 'かものサイト'
 theme = 'hugo-goa'
 author = 'Masaya Nakashima'
-publishdir = 'public'
+publishdir = 'docs'
 contentdir = 'content'
 
 ## Site Settings

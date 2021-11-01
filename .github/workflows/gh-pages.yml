@@ -24,6 +24,9 @@ jobs:
 
       - name: Build
         run: hugo --minify
+      
+      - name: replace
+        run: sed -ie 's|/img/{{|img/{{|' docs/index.html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

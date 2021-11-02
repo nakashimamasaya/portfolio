@@ -8,6 +8,11 @@ author = 'Masaya Nakashima'
 publishdir = 'docs'
 contentdir = 'content'
 
+## Hugo Built-in Features
+
+googleAnalytics = 'G-T2GHWES1K0'
+enableRobotsTXT = true
+
 ## Site Settings
 [params]
 author = "かも"

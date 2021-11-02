@@ -45,7 +45,7 @@ hightlightjs = true
     weight = 200
     url = "https://www.wantedly.com/id/kamo22sima"
 [[menu.main]]
-    name = "成果物リンク集"
+    name = "result"
     identifier = "result"
     weight = 300
     url = "/result/"

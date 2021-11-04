@@ -1,8 +1,8 @@
 ## Basic Configuration
 
-baseURL = 'https://nakashimamasaya.github.io/portfolio/'
+baseURL = 'https://www.kamo22sima.com'
 languageCode = 'ja'
-title = 'かものサイト'
+title = 'かものブログ'
 theme = 'hugo-goa'
 author = 'Masaya Nakashima'
 publishdir = 'docs'
@@ -40,15 +40,15 @@ hightlightjs = true
 
 ## Main Menu
 [[menu.main]]
-    name = "blog"
-    weight = 100
-    identifier = "blog"
-    url = "/blog/"
-[[menu.main]]
     name = "about"
     identifier = "about"
-    weight = 200
+    weight = 100
     url = "https://www.wantedly.com/id/kamo22sima"
+[[menu.main]]
+    name = "blog"
+    weight = 200
+    identifier = "blog"
+    url = "/blog/"
 [[menu.main]]
     name = "result"
     identifier = "result"

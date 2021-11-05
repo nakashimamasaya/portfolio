@@ -10,7 +10,7 @@ contentdir = 'content'
 
 ## Hugo Built-in Features
 
-googleAnalytics = ''
+googleAnalytics = 'G-YBVNWRBVHF'
 enableRobotsTXT = true
 
 ## Site Settings

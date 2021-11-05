@@ -33,7 +33,3 @@ hugoでサイト作った経験がないので参考にしたサイトをとり�
 * [hugo-goa](https://github.com/kaapiandcode/hugo-goa)
 
     これをテーマ設定しています
-
-* [DISQUS](https://disqus.com/)
-
-    コメントのために試しに導入してみました

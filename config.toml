@@ -9,7 +9,7 @@ publishdir = 'docs'
 contentdir = 'content'
 
 ## Hugo Built-in Features
-
+disqusShortname = 'kamo22sima'
 googleAnalytics = 'G-YBVNWRBVHF'
 enableRobotsTXT = true
 

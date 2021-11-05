@@ -17,7 +17,7 @@ enableRobotsTXT = true
 [params]
 author = "かも"
 intro = ""
-description = "高専卒の19卒エンジニア　気ままにしてます"
+description = "高専卒のエンジニア　気ままにしてます"
 authorimage = "kamo.png"
 dateformat = "Jan 2, 2006"
 

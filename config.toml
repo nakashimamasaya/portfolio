@@ -9,7 +9,7 @@ publishdir = 'docs'
 contentdir = 'content'
 
 ## Hugo Built-in Features
-disqusShortname = 'kamo22sima'
+disqusShortname = '//www-kamo22sima-com.disqus.com/count.js'
 googleAnalytics = 'G-YBVNWRBVHF'
 enableRobotsTXT = true
 

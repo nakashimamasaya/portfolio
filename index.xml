@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>かものブログ</title><link>https://www.kamo22sima.com/</link><description>Recent content on かものブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Tue, 02 Nov 2021 14:11:04 +0900</lastBuildDate><atom:link href="https://www.kamo22sima.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Result</title><link>https://www.kamo22sima.com/result/</link><pubDate>Tue, 02 Nov 2021 14:13:49 +0900</pubDate><guid>https://www.kamo22sima.com/result/</guid><description>今見れる成果物 学生時代 Unityインターハイに出たときに作ったやつ
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>かものブログ</title><link>https://www.kamo22sima.com/</link><description>Recent content on かものブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 06 Nov 2021 01:07:27 +0900</lastBuildDate><atom:link href="https://www.kamo22sima.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo メモ帳</title><link>https://www.kamo22sima.com/blog/hugo-memo/</link><pubDate>Sat, 06 Nov 2021 01:07:27 +0900</pubDate><guid>https://www.kamo22sima.com/blog/hugo-memo/</guid><description>こんにちはかもです。
+hugoでサイト作った経験がないので参考にしたサイトをとりあえず備忘録としてリストにしようと。
+あと記事書いてなれるために書いてます（笑）
+hugo参考リンク集 hugo 公式
+とりあえず困ったときの公式サイト
+静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る
+とりあえずhugoの記事設定や書き方やらたくさんわかりやすく載っている参考にするかも
+Hugo + GitHub Pages + GitHub Actions で独自ドメインのウェブサイトを構築する
+こことか参考に作った気がする 参考URLとか色々みたかも
+Google アナリティクスを設定する
+とりあえず設定してみた
+hugo-goa
+これをテーマ設定しています
+DISQUS
+コメントのために試しに導入してみました</description></item><item><title>Result</title><link>https://www.kamo22sima.com/result/</link><pubDate>Tue, 02 Nov 2021 14:13:49 +0900</pubDate><guid>https://www.kamo22sima.com/result/</guid><description>今見れる成果物 学生時代 Unityインターハイに出たときに作ったやつ
 三人ぐらいで作った 詳細記事
 遊びたい方へ
 記事を参考に作った tonejs-techpit

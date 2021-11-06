@@ -4,7 +4,6 @@ date: 2021-11-06T01:07:27+09:00
 draft: false
 categories: [ memo, hugo ]
 memo: [ memo ]
-showcomments: true
 ---
 こんにちはかもです。
 

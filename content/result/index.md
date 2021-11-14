@@ -3,9 +3,17 @@ title: "Result"
 date: 2021-11-02T14:13:49+09:00
 draft: false
 
+lastmod: 2021-11-14T16:05:49+09:00
 
 ---
-
+# 資格情報
+* [資格一覧ページ](https://scq.io/cUNtmka) 以下表示資格
+    * GCP 
+        * Professional Cloud Architect
+    * AWS
+        * Solutions Architect - Associate
+* 国家資格
+    * ITパスポート
 # 今見れる成果物
 
 ### 学生時代

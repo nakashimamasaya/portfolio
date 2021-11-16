@@ -8,6 +8,11 @@ author = 'Masaya Nakashima'
 publishdir = 'docs'
 contentdir = 'content'
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
 ## Hugo Built-in Features
 
 googleAnalytics = 'G-YBVNWRBVHF'

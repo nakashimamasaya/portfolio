@@ -9,12 +9,19 @@ lastmod: 2021-11-14T16:05:49+09:00
 # 資格情報
 * [資格一覧ページ](https://scq.io/cUNtmka) 以下表示資格
     * GCP 
-        * Professional Cloud Architect
+        *  Professional Cloud Architect
+
+            ![バッジ](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/37001867)
     * AWS
         * Solutions Architect - Associate
+            
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="82716d23-3f38-440b-9286-3562e63edbe3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+
 * 国家資格
     * ITパスポート
-# 今見れる成果物
+## 今見れる成果物
 
 ### 学生時代
 * Unityインターハイに出たときに作ったやつ

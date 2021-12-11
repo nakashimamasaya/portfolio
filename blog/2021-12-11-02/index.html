@@ -1,0 +1,136 @@
+<!doctype html><html lang=ja>
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=description content="高専卒のエンジニアがたまに書いているブログです">
+<title>
+かものブログ - raspberry pi でbitzenyをマイニングしてみた
+</title>
+<meta name=generator content="Hugo 0.90.1">
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css integrity=sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z crossorigin=anonymous>
+<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.8.2/css/all.css integrity=sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay crossorigin=anonymous>
+<link rel=stylesheet href=https://www.kamo22sima.com/css/main.css>
+<link rel=stylesheet href=https://www.kamo22sima.com/css/custom.css>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png href=/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/favicon-16x16.png sizes=16x16>
+<link rel=manifest href=/manifest.json>
+<link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5>
+<meta name=theme-color content="#ffffff">
+</head>
+<body lang=ja>
+<div class=container>
+<header class="text-left title">
+<h1 class=title>raspberry pi でbitzenyをマイニングしてみた</h1>
+</header>
+<section id=category-pane class=meta>
+<div class=col-md-12>
+<h6 class="text-left meta">
+PUBLISHED ON DEC 11, 2021
+—
+<a class=meta href=/categories/bitzeny>BITZENY</a>,
+<a class=meta href=/categories/raspberry-pi>RASPBERRY PI</a>
+</h6>
+</div>
+</section>
+<section id=content-pane>
+<div class="col-md-12 text-justify content">
+<p>こんにちはかもです。</p>
+<p>今更なんですが、家に眠らせていたraspberry piがあったので使ってマイニングしてみました。</p>
+<p>メモ的にやったことをまとめたいと</p>
+<h3 id=使っている機種>使っている機種</h3>
+<p>Raspberry Pi 3 Model B <a href=https://www.switch-science.com/catalog/3050/>詳細</a></p>
+<p>OS: Raspberry Pi OS</p>
+<h3 id=手順>手順</h3>
+<ol>
+<li>
+<p>Raspberry Piをセットアップ！！</p>
+<p>OSを入れなおしました（笑）</p>
+<p>公式がツールを出しているみたいなので使ってみると楽かも</p>
+<p><a href=https://www.raspberrypi.com/software/>公式のsoftwareページ</a></p>
+</li>
+<li>
+<p>色々インストール</p>
+<pre tabindex=0><code>$ sudo apt update
+$ sudo apt upgrade
+
+// 
+$ sudo apt install git automake libcurl4-openssl-dev gcc make -y
+</code></pre></li>
+<li>
+<p>cpuminerを入れてセットアップ</p>
+<p>当然GPUはないのでCPUでマイニングすることになる</p>
+<p>mining のツールがあるので落としてくる</p>
+<p>今回使った物はこちら
+<a href=https://github.com/macchky/cpuminer>cpuminer</a></p>
+<pre tabindex=0><code>$ git clone https://github.com/macchky/cpuminer.git
+$ cd cpuminer
+$ ./autogen.sh
+$ ./nomacro.pl
+$ ./configure CFLAGS=&quot;-O3&quot;
+$ make
+</code></pre><p>これをすると <code>minerd</code> が出力される</p>
+</li>
+<li>
+<p>Poolに登録</p>
+<p>今回は <code>うさぎコイン発掘所</code> さんを利用させていただきました。</p>
+<p><a href=https://bunnymining.work/bitzeny/>うさぎコイン発掘所</a></p>
+<p><a href=https://cryptomamiya.com/archives/248>こちら(poolの管理人さんのページ)</a>の手順を実行してください</p>
+</li>
+<li>
+<p>マイニング</p>
+<p>マイニングをしてみましょう！！</p>
+<p>${}で囲まれている部分は先ほど手順４のワーカー作成で作ったものを入れてください</p>
+<pre tabindex=0><code>$ minerd -a yescrypt -o stratum+tcp://bitzeny.bunnymining.work:19332 -u ${user}.${worker} -p ${password}
+</code></pre><p>これで掘れるようになっているはず</p>
+</li>
+<li>
+<p>自動起動設定</p>
+<p>これはしてもいいししなくてもよいです</p>
+<pre tabindex=0><code>$ crontab -e
+
+# こちらを記述
+$ @reboot /home/pi/cpuminer/minerd -a yescrypt -o stratum+tcp://bitzeny.bunnymining.work:19332 -u ${user}.${worker} -p ${password}
+</code></pre><p>これで電源を入れたときに実行できるようになったはずです</p>
+</li>
+</ol>
+<h3 id=やっている感想>やっている感想</h3>
+<p>意外と簡単にほりほりできるようになりました！！</p>
+<p>ただ、1ZNY=0.109808JPY(2021年12月11日現在)なので本当にお遊び程度ですね&mldr;.</p>
+<p>現在のレート(ZNY/JPY)</p>
+<script src=https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js></script>
+<p><coingecko-coin-price-chart-widget currency=jpy coin-id=bitzeny locale=ja height=300></coingecko-coin-price-chart-widget></p>
+<h3 id=参考サイト>参考サイト</h3>
+<ul>
+<li><a href=https://errormaker.blog.fc2.com/blog-entry-64.html>Rapberry Piでマイニングしてみた</a></li>
+<li><a href=https://qiita.com/zono_0/items/369c2323858bb7698c24>Raspberry Pi ではじめるCPUマイニング（BitZeny編）</a></li>
+<li></li>
+</ul>
+</div>
+</section>
+<section id=tag-pane class=meta>
+<div class=col-md-12>
+<h6 class="text-right meta">
+</h6>
+</div>
+</section>
+<section id=menu-pane class="menu text-center">
+<span><a class=menu-item href=https://www.kamo22sima.com/blog/2021-12-11-01/>&lt; prev | </a></span>
+<span><a class=menu-item href=/blog>blog</a></span>
+<h4 class=text-center><a class=menu-item href=https://www.kamo22sima.com>home</a></h4>
+</section>
+<footer class="text-center footer">
+<hr>
+<h6 class="text-center copyright">© 2021. Masaya Nakashima.</h6>
+<h6 class="text-center powered">Powered by <a href=https://gohugo.io/>Hugo v0.90.1</a> & <a href=https://github.com/shenoybr/hugo-goa>Goa</a>.</h6>
+<h6><a href aria-label="RSS Feed"><i class="fas fa-rss" aria-hidden=true></i></a></h6>
+</footer>
+</div>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script src=js/main.js></script>
+<script src=js/custom.js></script>
+</body>
+</html>

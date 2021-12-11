@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on かものブログ</title><link>https://www.kamo22sima.com/blog/</link><description>Recent content in Blogs on かものブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 11 Dec 2021 17:37:13 +0900</lastBuildDate><atom:link href="https://www.kamo22sima.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>golangを勉強しなおしている途中</title><link>https://www.kamo22sima.com/blog/2021-12-11-01/</link><pubDate>Sat, 11 Dec 2021 17:37:13 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-12-11-01/</guid><description>こんにちはかもです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on かものブログ</title><link>https://www.kamo22sima.com/blog/</link><description>Recent content in Blogs on かものブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 11 Dec 2021 19:14:03 +0900</lastBuildDate><atom:link href="https://www.kamo22sima.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>raspberry pi でbitzenyをマイニングしてみた</title><link>https://www.kamo22sima.com/blog/2021-12-11-02/</link><pubDate>Sat, 11 Dec 2021 19:14:03 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-12-11-02/</guid><description>こんにちはかもです。
+今更なんですが、家に眠らせていたraspberry piがあったので使ってマイニングしてみました。
+メモ的にやったことをまとめたいと
+使っている機種 Raspberry Pi 3 Model B 詳細
+OS: Raspberry Pi OS
+手順 Raspberry Piをセットアップ！！
+OSを入れなおしました（笑）
+公式がツールを出しているみたいなので使ってみると楽かも
+公式のsoftwareページ
+色々インストール
+$ sudo apt update $ sudo apt upgrade // $ sudo apt install git automake libcurl4-openssl-dev gcc make -y cpuminerを入れてセットアップ
+当然GPUはないのでCPUでマイニングすることになる
+mining のツールがあるので落としてくる
+今回使った物はこちら cpuminer
+$ git clone https://github.com/macchky/cpuminer.git $ cd cpuminer $ ./autogen.sh $ ./nomacro.pl $ ./configure CFLAGS=&amp;quot;-O3&amp;quot; $ make これをすると minerd が出力される</description></item><item><title>golangを勉強しなおしている途中</title><link>https://www.kamo22sima.com/blog/2021-12-11-01/</link><pubDate>Sat, 11 Dec 2021 17:37:13 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-12-11-01/</guid><description>こんにちはかもです。
 久々にgolang を一から勉強しているのでメモとして色々残していきたいと思います。
 随時更新される可能性があり。
 初期構築(Windows) 公式ページのダウンロードからwindows版を落としてください

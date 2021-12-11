@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on かものブログ</title><link>https://www.kamo22sima.com/blog/</link><description>Recent content in Blogs on かものブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 07 Nov 2021 22:36:07 +0900</lastBuildDate><atom:link href="https://www.kamo22sima.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>rails tutorialをしてみる</title><link>https://www.kamo22sima.com/blog/2021-11-07-01/</link><pubDate>Sun, 07 Nov 2021 22:36:07 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-11-07-01/</guid><description>こんにちはかもです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on かものブログ</title><link>https://www.kamo22sima.com/blog/</link><description>Recent content in Blogs on かものブログ</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 11 Dec 2021 17:37:13 +0900</lastBuildDate><atom:link href="https://www.kamo22sima.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>golangを勉強しなおしている途中</title><link>https://www.kamo22sima.com/blog/2021-12-11-01/</link><pubDate>Sat, 11 Dec 2021 17:37:13 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-12-11-01/</guid><description>こんにちはかもです。
+久々にgolang を一から勉強しているのでメモとして色々残していきたいと思います。
+随時更新される可能性があり。
+初期構築(Windows) 公式ページのダウンロードからwindows版を落としてください
+公式のダウンロードページ
+インストーラーを起動後、いわれるがままに進めていき、
+コマンドをたたいて下みたいな表示がでればOK
+$ go version go version go1.17.3 windows/amd64 参考サイト A Tour of Go https://go-tour-jp.appspot.com/list
+たぶん学習サイトとしては真っ先に上がるものだとおもう。
+自分自身初めて触ったときはここを参考に勉強しました。
+初めて知ったんですが、ローカルで起動できるんですね
+#### ローカルでの実行方法 $ go tool tour #### 上のコマンドで問題がある時 $ go get github.com/atotto/go-tour-jp/gotour $ gotour Udemy 結構いろいろ転がっているので見てみるのも面白いかも
+動画製作者のSNSアカウント行くと割引コードとか落ちているのでそれもよい
+ここから探す
+Effective Go ここも見ておきたい
+こうしたほうがいいというところが載ってある
+久々だったので忘れていることも多かった
+Effective GO
+言語仕様 まだ読めてないがよみたいぞ
+The Go Programmin Language Specification
+一言 公式本当に充実してる</description></item><item><title>rails tutorialをしてみる</title><link>https://www.kamo22sima.com/blog/2021-11-07-01/</link><pubDate>Sun, 07 Nov 2021 22:36:07 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-11-07-01/</guid><description>こんにちはかもです。
 とある事情でrailsを触ることになったので、しばらくそれと並行しつつやろうかなと。
 What Rails チュートリアル
 ここにあげていきます

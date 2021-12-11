@@ -5,7 +5,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=description content="高専卒のエンジニアがたまに書いているブログです">
 <title>
-かものブログ - rails tutorialをしてみる
+かものブログ - golangを勉強しなおしている途中
 </title>
 <meta name=generator content="Hugo 0.90.1">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
@@ -23,28 +23,55 @@
 <body lang=ja>
 <div class=container>
 <header class="text-left title">
-<h1 class=title>rails tutorialをしてみる</h1>
+<h1 class=title>golangを勉強しなおしている途中</h1>
 </header>
 <section id=category-pane class=meta>
 <div class=col-md-12>
 <h6 class="text-left meta">
-PUBLISHED ON NOV 7, 2021
+PUBLISHED ON DEC 11, 2021
 —
-<a class=meta href=/categories/rails>RAILS</a>,
-<a class=meta href=/categories/series>SERIES</a>,
-<a class=meta href=/categories/tutorial>TUTORIAL</a>
+<a class=meta href=/categories/golang>GOLANG</a>
 </h6>
 </div>
 </section>
 <section id=content-pane>
 <div class="col-md-12 text-justify content">
 <p>こんにちはかもです。</p>
-<p>とある事情でrailsを触ることになったので、しばらくそれと並行しつつやろうかなと。</p>
-<h1 id=what>What</h1>
-<p><a href=https://railstutorial.jp/>Rails チュートリアル</a></p>
-<p>ここにあげていきます</p>
-<p><a href=https://github.com/nakashimamasaya/rails-tutorial/tree/main>rails-tutorial リポジトリ</a></p>
-<p>定期的になにか報告できればと思いますー</p>
+<p>久々にgolang を一から勉強しているのでメモとして色々残していきたいと思います。</p>
+<p>随時更新される可能性があり。</p>
+<h1 id=初期構築windows>初期構築(Windows)</h1>
+<p>公式ページのダウンロードからwindows版を落としてください</p>
+<p><a href=https://go.dev/dl/>公式のダウンロードページ</a></p>
+<p>インストーラーを起動後、いわれるがままに進めていき、</p>
+<p>コマンドをたたいて下みたいな表示がでればOK</p>
+<pre tabindex=0><code>$ go version
+go version go1.17.3 windows/amd64
+</code></pre><h1 id=参考サイト>参考サイト</h1>
+<h2 id=a-tour-of-go>A Tour of Go</h2>
+<p><a href=https://go-tour-jp.appspot.com/list>https://go-tour-jp.appspot.com/list</a></p>
+<p>たぶん学習サイトとしては真っ先に上がるものだとおもう。</p>
+<p>自分自身初めて触ったときはここを参考に勉強しました。</p>
+<p>初めて知ったんですが、ローカルで起動できるんですね</p>
+<pre tabindex=0><code class=language-　 data-lang=　>#### ローカルでの実行方法
+$ go tool tour
+
+#### 上のコマンドで問題がある時
+$ go get github.com/atotto/go-tour-jp/gotour
+$ gotour
+</code></pre><h2 id=udemy>Udemy</h2>
+<p>結構いろいろ転がっているので見てみるのも面白いかも</p>
+<p>動画製作者のSNSアカウント行くと割引コードとか落ちているのでそれもよい</p>
+<p><a href="https://www.udemy.com/courses/search/?courseLabel=5972&q=golang&sort=relevance&src=ukw">ここから探す</a></p>
+<h2 id=effective-go>Effective Go</h2>
+<p>ここも見ておきたい</p>
+<p>こうしたほうがいいというところが載ってある</p>
+<p>久々だったので忘れていることも多かった</p>
+<p><a href=https://go.dev/ref/spec>Effective GO</a></p>
+<h2 id=言語仕様>言語仕様</h2>
+<p>まだ読めてないがよみたいぞ</p>
+<p><a href=https://go.dev/ref/spec>The Go Programmin Language Specification</a></p>
+<h1 id=一言>一言</h1>
+<p>公式本当に充実してる</p>
 </div>
 </section>
 <section id=tag-pane class=meta>
@@ -54,9 +81,8 @@ PUBLISHED ON NOV 7, 2021
 </div>
 </section>
 <section id=menu-pane class="menu text-center">
-<span><a class=menu-item href=https://www.kamo22sima.com/blog/hugo-memo/>&lt; prev | </a></span>
+<span><a class=menu-item href=https://www.kamo22sima.com/blog/2021-11-07-01/>&lt; prev | </a></span>
 <span><a class=menu-item href=/blog>blog</a></span>
-<span><a class=menu-item href=https://www.kamo22sima.com/blog/2021-12-11-01/> | next ></a></span>
 <h4 class=text-center><a class=menu-item href=https://www.kamo22sima.com>home</a></h4>
 </section>
 <footer class="text-center footer">

@@ -12,6 +12,7 @@ lastmod: 2021-11-14T16:05:49+09:00
         * Cloud Practitioner (2021/12)
         * Solutions Architect - Associate(2020/09)
 
+    ![Cloud Practioner](/img/aws-certified-cloud-practitioner.png)
     ![solution architect bagde](/img/aws-certified-solutions-architect-associate.png)
 
     * GCP

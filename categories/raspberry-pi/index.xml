@@ -12,4 +12,4 @@ $ sudo apt update $ sudo apt upgrade // $ sudo apt install git automake libcurl4
 当然GPUはないのでCPUでマイニングすることになる
 mining のツールがあるので落としてくる
 今回使った物はこちら cpuminer
-$ git clone https://github.com/macchky/cpuminer.git $ cd cpuminer $ ./autogen.sh $ ./nomacro.pl $ ./configure CFLAGS=&amp;quot;-O3&amp;quot; $ make これをすると minerd が出力される</description></item></channel></rss>
+$ git clone https://github.com/macchky/cpuminer.git $ cd cpuminer $ ./autogen.sh $ ./nomacro.pl $ ./configure CFLAGS=&amp;#34;-O3&amp;#34; $ make これをすると minerd が出力される</description></item></channel></rss>

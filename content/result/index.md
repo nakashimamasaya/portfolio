@@ -13,7 +13,8 @@ lastmod: 2021-11-14T16:05:49+09:00
     * Solutions Architect - Associate(2020/09)
 
 * GCP
-    *  Professional Cloud Architect(2021/08)
+    * Associate Cloud Engineer(2022/04)
+    * Professional Cloud Architect(2021/08)
     
 * 国家資格
     * ITパスポート(2020/03)
@@ -21,6 +22,7 @@ lastmod: 2021-11-14T16:05:49+09:00
 
     ![Cloud Practioner](/img/aws-certified-cloud-practitioner.png)
     ![solution architect bagde](/img/aws-certified-solutions-architect-associate.png)
+    ![GCP Associate CLoud Engineer](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49537927)
     ![GCP Professional Cloud Architect badge](https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/37001867)
 ## 成果物
 * Unityインターハイに出たときに作ったやつ [2016]

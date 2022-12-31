@@ -12,7 +12,9 @@ $ sudo apt update $ sudo apt upgrade // $ sudo apt install git automake libcurl4
 当然GPUはないのでCPUでマイニングすることになる
 mining のツールがあるので落としてくる
 今回使った物はこちら cpuminer
-$ git clone https://github.com/macchky/cpuminer.git $ cd cpuminer $ ./autogen.sh $ ./nomacro.pl $ ./configure CFLAGS=&amp;#34;-O3&amp;#34; $ make これをすると minerd が出力される</description></item><item><title>golangを勉強しなおしている途中</title><link>https://www.kamo22sima.com/blog/2021-12-11-01/</link><pubDate>Sat, 11 Dec 2021 17:37:13 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-12-11-01/</guid><description>こんにちはかもです。
+$ git clone https://github.com/macchky/cpuminer.git $ cd cpuminer $ ./autogen.sh $ ./nomacro.pl $ ./configure CFLAGS=&amp;#34;-O3&amp;#34; $ make これをすると minerd が出力される
+Poolに登録
+今回は うさぎコイン発掘所 さんを利用させていただきました。</description></item><item><title>golangを勉強しなおしている途中</title><link>https://www.kamo22sima.com/blog/2021-12-11-01/</link><pubDate>Sat, 11 Dec 2021 17:37:13 +0900</pubDate><guid>https://www.kamo22sima.com/blog/2021-12-11-01/</guid><description>こんにちはかもです。
 久々にgolang を一から勉強しているのでメモとして色々残していきたいと思います。
 随時更新される可能性があり。
 初期構築(Windows) 公式ページのダウンロードからwindows版を落としてください
@@ -53,7 +55,7 @@ hugo-goa
 AWS
 Cloud Practitioner (2021/12) Solutions Architect - Associate(2020/09) GCP
 Associate Cloud Engineer(2022/04) Professional Cloud Architect(2021/08) 国家資格
-ITパスポート(2020/03) 応用情報技術者試験(2021/10) 成果物 Unityインターハイに出たときに作ったやつ [2016]
+ITパスポート(2020/03) 基本情報技術者試験(2022/05) 応用情報技術者試験(2021/10) 成果物 Unityインターハイに出たときに作ったやつ [2016]
 三人ぐらいで作った 詳細記事
 遊びたい方へ
 tonejs-techpit [2021]

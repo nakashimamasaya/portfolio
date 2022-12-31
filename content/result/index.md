@@ -18,6 +18,7 @@ lastmod: 2021-11-14T16:05:49+09:00
     
 * 国家資格
     * ITパスポート(2020/03)
+    * 基本情報技術者試験(2022/05)
     * 応用情報技術者試験(2021/10)
 
     ![Cloud Practioner](/img/aws-certified-cloud-practitioner.png)
